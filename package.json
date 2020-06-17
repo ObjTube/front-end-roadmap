@@ -2,16 +2,19 @@
   "name": "front-end-roadmap",
   "version": "0.1.0",
   "private": true,
-  "homeage": "",
+  "homepage": "https://objtube.github.io/front-end-roadmap",
   "dependencies": {
     "fabric": "^3.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-github-btn": "^1.2.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

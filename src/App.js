@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { fabric } from 'fabric'
-import './App.css';
+import GitHubButton from 'react-github-btn'
 
+import './App.css';
+import LOGO from './logo.png'
 const CARD_CONFIG = {
   width: 140,
   height: 40,
@@ -536,7 +538,22 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ marginTop: 60 }}>
+      <div className="header">
+        <div className="top">
+          <img src={LOGO} alt="logo" />
+          <span className="github-button">
+            <GitHubButton href="https://github.com/ObjTube/front-end-roadmap" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star ObjTube/front-end-roadmap on GitHub">Star</GitHubButton>
+          </span>
+        </div>
+        <div className="title">
+          <span className="text">
+            前端学习路线
+          <span className="emoji">🧶🦌</span>
+          </span>
+        </div>
+        <div className="sub-title">👨🏻‍💻 好好学习，天天敲代码 👩🏻‍💻</div>
+      </div>
+      <div style={{ marginTop: 60 }} className="roadmap">
         <canvas id="c" height="5000px" width="1000px" ></canvas>
       </div>
     </div>
