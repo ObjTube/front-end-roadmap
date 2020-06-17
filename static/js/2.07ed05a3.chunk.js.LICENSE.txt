@@ -11,6 +11,12 @@ object-assign
  * @license  MIT
  */
 
+/*!
+ * github-buttons v2.11.0
+ * (c) 2020 なつき
+ * @license BSD-2-Clause
+ */
+
 /*! Fabric.js Copyright 2008-2015, Printio (Juriy Zaytsev, Maxim Chernyak) */
 
 /** @license React v0.19.1
