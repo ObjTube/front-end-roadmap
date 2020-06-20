@@ -1,5 +1,5 @@
 import React from 'react'
-import LOGO from '../../assets/logo.png'
+import LOGO from '../../assets/logo.jpeg'
 import GitHubButton from 'react-github-btn'
 
 export default function Header() {
