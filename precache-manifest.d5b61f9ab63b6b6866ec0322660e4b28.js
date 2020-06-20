@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a657fabbc3f6edc215343253af6fbaf",
+    "revision": "721b7bfb5ebe190c32fed92295e97e64",
     "url": "/front-end-roadmap/index.html"
   },
   {
-    "revision": "69e024e82eee6fe24b4e",
-    "url": "/front-end-roadmap/static/css/main.f17ccb1f.chunk.css"
+    "revision": "f0d559f71d6ee810cd4b",
+    "url": "/front-end-roadmap/static/css/main.640f6fde.chunk.css"
   },
   {
     "revision": "abdb8aa721c8bd79e54f",
@@ -48,11 +48,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-end-roadmap/static/js/9.36c959db.chunk.js"
   },
   {
-    "revision": "69e024e82eee6fe24b4e",
-    "url": "/front-end-roadmap/static/js/main.1ce87bb0.chunk.js"
+    "revision": "f0d559f71d6ee810cd4b",
+    "url": "/front-end-roadmap/static/js/main.9cb92d01.chunk.js"
   },
   {
     "revision": "78cfd5cc76bef55ffe1d",
     "url": "/front-end-roadmap/static/js/runtime-main.43e6f072.js"
+  },
+  {
+    "revision": "588f5cbf8f675d035b3fd65643dc6252",
+    "url": "/front-end-roadmap/static/media/logo.588f5cbf.jpeg"
   }
 ]);
