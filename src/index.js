@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import './App.css';
+import Index from './page/index';
+import Guide from './page/guide';
+import Header from './components/header'
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Router >
+      <Route exact path="/" component={Index} />
+      <Route path="/guide/:query" component={Guide} />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
