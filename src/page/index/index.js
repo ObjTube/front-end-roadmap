@@ -10,9 +10,9 @@ import "./style.css";
 
 const options = [
   { value: "all", label: "完整路线" },
-  { value: "p1", label: "👶🏻初级路线" },
-  { value: "p2", label: "👦🏻中级路线" },
-  { value: "p3", label: "👨🏻高级路线" },
+  { value: "p1", label: "👶🏻阶段1" },
+  { value: "p2", label: "👦🏻阶段2" },
+  { value: "p3", label: "👨🏻阶段3" },
   //   { value: "10000", label: "👴🏻养生路线" },
 ];
 
