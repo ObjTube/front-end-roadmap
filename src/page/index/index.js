@@ -71,19 +71,21 @@ function Index() {
       </div>
 
       <div className="roadmap">
-        <div className="desc-container">
-          <div className="explain-square">
-            <div className="explain-content">
-              <div>1. ⭐️ - 推荐使用</div>
-              <div>2. ✅ - 备选方案</div>
-              <div>3. ❎ - 不推荐学习（技术已过时或其他原因）</div>
-              <div>
-                4.
-                <span className="grey-card">xxxx</span> - 需要时再学
+        {showTag && (
+          <div className="desc-container">
+            <div className="explain-square">
+              <div className="explain-content">
+                <div>1. ⭐️ - 推荐使用</div>
+                <div>2. ✅ - 备选方案</div>
+                <div>3. ❎ - 不推荐学习（技术已过时或其他原因）</div>
+                <div>
+                  4.
+                  <span className="grey-card">xxxx</span> - 需要时再学
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
         {process === "all" && showTag && (
           <div>
             <canvas id="roadmap-all" height="5000px" width="1000px"></canvas>

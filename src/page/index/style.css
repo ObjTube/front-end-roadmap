@@ -9,9 +9,12 @@
   margin: 0 10% 0;
   display: flex;
   padding-top: 20px;
+  position: relative;
+  bottom: -20px;
 }
 .roadmap {
   background-color: #2d4059;
+  padding-top: 40px;
 }
 
 .desc-container .explain-square {
