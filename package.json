@@ -7,6 +7,7 @@
     "dom-to-image": "^2.6.0",
     "fabric": "^3.6.3",
     "mdx.macro": "^0.2.9",
+    "rc-switch": "^3.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-github-btn": "^1.2.0",

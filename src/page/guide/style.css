@@ -4,6 +4,11 @@
   border-top: 2px solid #eee;
   position: relative;
 }
+.guide-container h1 {
+  border-left: 4px #e36474 solid;
+  padding-left: 12px;
+}
+
 .go-home {
   position: absolute;
   left: 0;

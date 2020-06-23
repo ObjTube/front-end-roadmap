@@ -173,7 +173,7 @@ export function makeSubLine(c1, c2) {
   return line;
 }
 
-export default function drawRoadmap(id, roadmap) {
+export default function drawRoadmap(id, roadmap, isShowTag) {
   const canvas = new fabric.Canvas(id, {
     containerClass: "roadmap-canvas",
     selection: false,
@@ -190,7 +190,7 @@ export default function drawRoadmap(id, roadmap) {
     p.link = parent.link;
 
     arr.push(p);
-    if (parent.tag) {
+    if (parent.tag && isShowTag) {
       const tag = makeTag(parent.tag, p);
       arr.push(tag);
     }
@@ -219,7 +219,7 @@ export default function drawRoadmap(id, roadmap) {
             ? makeSubLine(c, parentInstance)
             : makeSubLine(parentInstance, c);
         lines.push(l);
-        if (child.tag) {
+        if (child.tag && isShowTag) {
           const tag = makeTag(child.tag, c, direction === "left");
           arr.push(tag);
         }

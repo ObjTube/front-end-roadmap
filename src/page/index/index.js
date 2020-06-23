@@ -2,9 +2,11 @@ import React, { useEffect, useState, useCallback } from "react";
 import { useHistory } from "react-router-dom";
 import Select from "react-select";
 import domtoimage from "dom-to-image";
-
+import Switch from "rc-switch";
+import "rc-switch/assets/index.css";
 import drawRoadmap from "./drawRoadmap";
 import * as roadMap from "./roadmap";
+import "./style.css";
 
 const options = [
   { value: "all", label: "完整路线" },
@@ -17,18 +19,20 @@ const options = [
 function Index() {
   const history = useHistory();
   const [process, setProcess] = useState("all");
+  const [showTag, setShowTag] = useState(true);
   useEffect(() => {
-    const canvas = drawRoadmap(`roadmap-${process}`, roadMap[process]);
+    const canvas = drawRoadmap(`roadmap-${process}`, roadMap[process], showTag);
     canvas.on("mouse:down", (options) => {
       if (options.target && options.target.link) {
         history.push(`/guide${options.target.link}`);
       }
     });
-  }, [history, process]);
+  }, [history, process, showTag]);
 
   const onSelectProcess = useCallback(({ value }) => {
     setProcess(value);
   }, []);
+
   const onDownloadImg = useCallback(() => {
     const $el = document.querySelector(".roadmap");
     domtoimage.toJpeg($el).then(function (dataUrl) {
@@ -38,9 +42,22 @@ function Index() {
       link.click();
     });
   }, []);
+
+  const onShowTag = useCallback((value) => {
+    setShowTag(value);
+  }, []);
   return (
     <div className="roadmap-container">
       <div className="process-select-container">
+        <div className="tag-switch">
+          <span>展示标签</span>
+          <Switch
+            checkedChildren="开"
+            unCheckedChildren="关"
+            defaultChecked
+            onChange={onShowTag}
+          />
+        </div>
         <Select
           options={options}
           defaultValue={options[0]}
@@ -67,22 +84,42 @@ function Index() {
             </div>
           </div>
         </div>
-        {process === "all" && (
+        {process === "all" && showTag && (
           <div>
             <canvas id="roadmap-all" height="5000px" width="1000px"></canvas>
           </div>
         )}
-        {process === "p1" && (
+        {process === "all" && !showTag && (
+          <div>
+            <canvas id="roadmap-all" height="5000px" width="1000px"></canvas>
+          </div>
+        )}
+        {process === "p1" && showTag && (
           <div>
             <canvas id="roadmap-p1" height="5000px" width="1000px"></canvas>
           </div>
         )}
-        {process === "p2" && (
+        {process === "p1" && !showTag && (
+          <div>
+            <canvas id="roadmap-p1" height="5000px" width="1000px"></canvas>
+          </div>
+        )}
+        {process === "p2" && !showTag && (
           <div>
             <canvas id="roadmap-p2" height="5000px" width="1000px"></canvas>
           </div>
         )}
-        {process === "p3" && (
+        {process === "p2" && showTag && (
+          <div>
+            <canvas id="roadmap-p2" height="5000px" width="1000px"></canvas>
+          </div>
+        )}
+        {process === "p3" && !showTag && (
+          <div>
+            <canvas id="roadmap-p3" height="5000px" width="1000px"></canvas>
+          </div>
+        )}
+        {process === "p3" && showTag && (
           <div>
             <canvas id="roadmap-p3" height="5000px" width="1000px"></canvas>
           </div>

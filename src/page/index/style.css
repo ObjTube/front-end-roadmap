@@ -1,0 +1,86 @@
+.roadmap-container {
+  font-family: Helvetica, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑",
+    Arial, sans-serif;
+  position: relative;
+  background-color: #2d4059;
+  padding-top: 60px;
+}
+.desc-container {
+  margin: 0 10% 0;
+  display: flex;
+  padding-top: 20px;
+}
+.roadmap {
+  background-color: #2d4059;
+}
+
+.desc-container .explain-square {
+  flex: 1;
+  text-align: left;
+}
+.desc-container .explain-square .explain-content {
+  border-radius: 2px;
+  /* border: 1px solid #eee; */
+  font-size: 13px;
+  width: 220px;
+  padding: 10px;
+  background-color: #fffecf;
+  color: #666;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 10px;
+  position: relative;
+  transform: rotate(-4deg);
+}
+.explain-content div {
+  margin-bottom: 4px;
+}
+.explain-content .grey-card {
+  display: inline-block;
+  height: 20px;
+  border-radius: 2px;
+  padding: 2px 10px;
+  background-color: #cccccc;
+}
+.process-select-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+.process-select-container .tag-switch {
+  color: #fff;
+  padding-right: 10px;
+  margin-right: 10px;
+  height: 38px;
+  line-height: 38px;
+  border-right: 2px solid #aaa;
+}
+.process-select-container .tag-switch span {
+  margin-right: 10px;
+}
+.process-select-container .process-select {
+  width: 200px;
+}
+.process-select-container .download {
+  color: #fff;
+  padding: 0 10px;
+  vertical-align: bottom;
+  margin-left: 10px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px dashed #eee;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.process-select-container .download:hover {
+  background-color: #333;
+}
+
+.roadmap {
+  text-align: center;
+}
+.roadmap-canvas {
+  margin: 0 auto;
+}
+.rc-switch-checked {
+  background-color: #2d4059;
+  border-color: #fff;
+}
