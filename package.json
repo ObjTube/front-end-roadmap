@@ -4,13 +4,15 @@
   "private": true,
   "homepage": "https://objtube.github.io/front-end-roadmap",
   "dependencies": {
+    "dom-to-image": "^2.6.0",
     "fabric": "^3.6.3",
     "mdx.macro": "^0.2.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-github-btn": "^1.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

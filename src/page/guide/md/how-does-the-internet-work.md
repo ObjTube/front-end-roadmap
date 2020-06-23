@@ -1,0 +1,15 @@
+# 互联网是如何运作的？
+
+## 📄 文章
+
+- [how-does-internet-work-how-internet-works](https://turbofuture.com/internet/how-does-internet-work-how-internet-works)
+- [InternetWhitepaper](https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
+- [互联网是如何工作的 MDN](https://developer.mozilla.org/zh-CN/docs/learn/How_the_Internet_works)
+
+## 📺 视频
+
+- [互联网是如何运作的？](https://www.bilibili.com/video/BV1Rz4y197Jd)
+
+### 📚 书籍
+
+- 《图解 HTTP》

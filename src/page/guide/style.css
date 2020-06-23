@@ -1,5 +1,23 @@
-.guide-container{
-    margin: 0 10%;
-    padding:30px 10%;
-    border-top: 2px solid #eee;
+.guide-container {
+  margin: 0 10%;
+  padding: 30px 10%;
+  border-top: 2px solid #eee;
+  position: relative;
+}
+.go-home {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 60px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 2px;
+  color: #e54748;
+  border: 1px solid #e54748;
+  font-size: 12px;
+  cursor: pointer;
+}
+.go-home:hover {
+  background-color: #e54748;
+  color: #fff;
 }
