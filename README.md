@@ -1,6 +1,6 @@
 # Front-End-Roadmap 🧶🦌
 
-![](./demo.png)
+![路线图](./roadmap.jpeg)
 
 ## 功能
 
