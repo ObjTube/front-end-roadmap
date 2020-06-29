@@ -1,9 +1,13 @@
 {
-  "author": "luke",
   "name": "front-end-roadmap",
   "version": "0.1.0",
+  "private": true,
   "homepage": "https://objtube.github.io/front-end-roadmap",
   "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "fabric": "^3.6.3",
+    "mdx.macro": "^0.2.9",
+    "rc-switch": "^3.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-github-btn": "^1.2.0",
@@ -16,6 +20,21 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
     "gh-pages": "^3.0.0"
