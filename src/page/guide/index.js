@@ -44,6 +44,8 @@ function Markdown() {
       break;
     case "node":
       Content = lazy(() => importMDX("./md/node.md"));
+    case "temp-md":
+      Content = lazy(() => importMDX("./md/temp-md.md"));
       break;
     default:
       break;

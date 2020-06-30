@@ -187,7 +187,7 @@ export default function drawRoadmap(id, roadmap, isShowTag) {
   roadmap.forEach((parent) => {
     const p = makeTextSquare(parent.text, parent, true);
     // 保存跳转地址，在点击的时候从卡片的实例上获取
-    p.link = parent.link;
+    p.link = parent.link || "/temp-md";
 
     arr.push(p);
     if (parent.tag && isShowTag) {
@@ -213,6 +213,9 @@ export default function drawRoadmap(id, roadmap, isShowTag) {
               (CARD_CONFIG.height + CARD_CONFIG.subCardMargin);
         childY += isEven ? CARD_CONFIG.height / 2 : 0;
         const c = makeTextSquare(child.text, { ...child, y: childY, depth });
+        // 如果没有配置跳转地址，则使用父卡片的地址
+        c.link = child.link || parent.link || "/temp-md";
+
         arr.push(c);
         const l =
           direction === "left"
