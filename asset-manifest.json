@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/front-end-roadmap/static/css/main.13283ba7.chunk.css",
-    "main.js": "/front-end-roadmap/static/js/main.936c2da9.chunk.js",
-    "main.js.map": "/front-end-roadmap/static/js/main.936c2da9.chunk.js.map",
-    "runtime-main.js": "/front-end-roadmap/static/js/runtime-main.6d868465.js",
-    "runtime-main.js.map": "/front-end-roadmap/static/js/runtime-main.6d868465.js.map",
+    "main.js": "/front-end-roadmap/static/js/main.4f04e858.chunk.js",
+    "main.js.map": "/front-end-roadmap/static/js/main.4f04e858.chunk.js.map",
+    "runtime-main.js": "/front-end-roadmap/static/js/runtime-main.27048fba.js",
+    "runtime-main.js.map": "/front-end-roadmap/static/js/runtime-main.27048fba.js.map",
     "static/css/2.5137fd11.chunk.css": "/front-end-roadmap/static/css/2.5137fd11.chunk.css",
     "static/js/2.45cb0689.chunk.js": "/front-end-roadmap/static/js/2.45cb0689.chunk.js",
     "static/js/2.45cb0689.chunk.js.map": "/front-end-roadmap/static/js/2.45cb0689.chunk.js.map",
@@ -24,8 +24,10 @@
     "static/js/9.cec77db9.chunk.js.map": "/front-end-roadmap/static/js/9.cec77db9.chunk.js.map",
     "static/js/10.6359fc4c.chunk.js": "/front-end-roadmap/static/js/10.6359fc4c.chunk.js",
     "static/js/10.6359fc4c.chunk.js.map": "/front-end-roadmap/static/js/10.6359fc4c.chunk.js.map",
+    "static/js/11.43710037.chunk.js": "/front-end-roadmap/static/js/11.43710037.chunk.js",
+    "static/js/11.43710037.chunk.js.map": "/front-end-roadmap/static/js/11.43710037.chunk.js.map",
     "index.html": "/front-end-roadmap/index.html",
-    "precache-manifest.3945033d040d1391b009cec847a39bd6.js": "/front-end-roadmap/precache-manifest.3945033d040d1391b009cec847a39bd6.js",
+    "precache-manifest.6b1f0a6518682d7bc491c1e175c35755.js": "/front-end-roadmap/precache-manifest.6b1f0a6518682d7bc491c1e175c35755.js",
     "service-worker.js": "/front-end-roadmap/service-worker.js",
     "static/css/2.5137fd11.chunk.css.map": "/front-end-roadmap/static/css/2.5137fd11.chunk.css.map",
     "static/css/main.13283ba7.chunk.css.map": "/front-end-roadmap/static/css/main.13283ba7.chunk.css.map",
@@ -33,10 +35,10 @@
     "static/media/logo.jpeg": "/front-end-roadmap/static/media/logo.588f5cbf.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d868465.js",
+    "static/js/runtime-main.27048fba.js",
     "static/css/2.5137fd11.chunk.css",
     "static/js/2.45cb0689.chunk.js",
     "static/css/main.13283ba7.chunk.css",
-    "static/js/main.936c2da9.chunk.js"
+    "static/js/main.4f04e858.chunk.js"
   ]
 }

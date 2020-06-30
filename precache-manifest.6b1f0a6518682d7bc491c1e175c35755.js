@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1e57cbe76b66d773d914b6a10eb3e2c",
+    "revision": "b1c4d38ab11d45f42787df9d8046271c",
     "url": "/front-end-roadmap/index.html"
   },
   {
@@ -8,12 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-end-roadmap/static/css/2.5137fd11.chunk.css"
   },
   {
-    "revision": "e439d5a97f03a636f95f",
+    "revision": "a7c97d1dcbd7779319f2",
     "url": "/front-end-roadmap/static/css/main.13283ba7.chunk.css"
   },
   {
     "revision": "f030fd1aeea1b71a530b",
     "url": "/front-end-roadmap/static/js/10.6359fc4c.chunk.js"
+  },
+  {
+    "revision": "6836062e015f2b0a1d2a",
+    "url": "/front-end-roadmap/static/js/11.43710037.chunk.js"
   },
   {
     "revision": "638451000dbd449987c5",
@@ -52,12 +56,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-end-roadmap/static/js/9.cec77db9.chunk.js"
   },
   {
-    "revision": "e439d5a97f03a636f95f",
-    "url": "/front-end-roadmap/static/js/main.936c2da9.chunk.js"
+    "revision": "a7c97d1dcbd7779319f2",
+    "url": "/front-end-roadmap/static/js/main.4f04e858.chunk.js"
   },
   {
-    "revision": "5a4c7b2cc97fd6f4514f",
-    "url": "/front-end-roadmap/static/js/runtime-main.6d868465.js"
+    "revision": "50c51a24a5a600050aac",
+    "url": "/front-end-roadmap/static/js/runtime-main.27048fba.js"
   },
   {
     "revision": "588f5cbf8f675d035b3fd65643dc6252",
