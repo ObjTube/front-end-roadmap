@@ -158,6 +158,7 @@ export const all = [
     text: "构建工具",
     x: 400,
     y: 1300,
+    link: "/build-tools",
     children: [
       [],
       [
@@ -179,6 +180,7 @@ export const all = [
     x: 300,
     y: 1400,
     process: 2,
+    link: "/css-preprocessor",
     children: [
       [
         c("Sass", 100, 100, { tag: TAG.recommand }),
@@ -192,6 +194,7 @@ export const all = [
     x: 500,
     y: 1700,
     process: 2,
+    link: "/js-framework",
     children: [
       [
         c("React", { x: 200, y: 1570 }, 100, {}, [
@@ -215,6 +218,7 @@ export const all = [
     x: 400,
     y: 1900,
     process: 2,
+    link: "/css-framework",
     children: [
       [],
       [
@@ -229,6 +233,7 @@ export const all = [
     x: 300,
     y: 2000,
     process: 3,
+    link: "/css-modern",
     children: [
       [
         c("Styled Component", 10, 140, { tag: TAG.recommand }),
@@ -242,6 +247,7 @@ export const all = [
     x: 400,
     y: 2200,
     process: 3,
+    link: "/test-framework",
     children: [
       [
         c("单元测试", 200, 100),
@@ -255,6 +261,7 @@ export const all = [
     text: "代码质量",
     x: 400,
     y: 2400,
+    link: "/code-quality",
     process: 3,
     children: [
       [
@@ -281,6 +288,7 @@ export const all = [
     x: 380,
     y: 2760,
     process: 3,
+    link: "/performance",
     children: [
       [
         c("性能指标", 140, 100, {}, [
@@ -304,6 +312,7 @@ export const all = [
     text: "数据可视化",
     x: 300,
     y: 2980,
+    link: "/data-view",
     children: [
       [
         c("EChart", 100, 100, { tag: TAG.recommand }),
@@ -318,6 +327,7 @@ export const all = [
     x: 420,
     y: 3180,
     process: 3,
+    link: "/ssr",
     children: [
       [],
       [c("Next.js(React)", 700, 120), c("Nuxt.js(Vue)", 700, 120)],
@@ -327,6 +337,7 @@ export const all = [
     text: "移动端应用",
     x: 360,
     y: 3340,
+    link: "/mobile-app",
     children: [
       [
         c("React Native", 200, 100),
@@ -347,6 +358,7 @@ export const all = [
     text: "小程序",
     x: 400,
     y: 3560,
+    link: "/mini-app",
     children: [
       [
         c("原生", 200, 100, {}, [
@@ -368,6 +380,7 @@ export const all = [
     text: "桌面应用",
     x: 450,
     y: 3670,
+    link: "/desktop-app",
     children: [
       [c("Electron", 200, 100, { tag: TAG.recommand }), c("NW.js", 200, 100)],
     ],
@@ -377,6 +390,7 @@ export const all = [
     x: 400,
     y: 3840,
     process: 3,
+    link: "/static-site",
     children: [
       [],
       [
@@ -391,6 +405,7 @@ export const all = [
     text: "Web Assembly",
     x: 400,
     y: 4000,
+    link: "/web-assembly",
     bgColor: "#CCC",
     children: [[c("拥抱未来", 200, 100)]],
   },

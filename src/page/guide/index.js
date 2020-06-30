@@ -44,6 +44,55 @@ function Markdown() {
       break;
     case "node":
       Content = lazy(() => importMDX("./md/node.md"));
+      break;
+    case "code-quality":
+      Content = lazy(() => importMDX("./md/code-quality.md"));
+      break;
+    case "css-framework":
+      Content = lazy(() => importMDX("./md/css-framework.md"));
+      break;
+    case "css-modern":
+      Content = lazy(() => importMDX("./md/css-modern.md"));
+      break;
+    case "css-preprocessor":
+      Content = lazy(() => importMDX("./md/css-preprocessor.md"));
+      break;
+    case "data-view":
+      Content = lazy(() => importMDX("./md/data-view.md"));
+      break;
+    case "desktop-app":
+      Content = lazy(() => importMDX("./md/desktop-app.md"));
+      break;
+    case "js-framework":
+      Content = lazy(() => importMDX("./md/js-framework.md"));
+      break;
+    case "mini-app":
+      Content = lazy(() => importMDX("./md/mini-app.md"));
+      break;
+    case "mobile-app":
+      Content = lazy(() => importMDX("./md/mobile-app.md"));
+      break;
+    case "performance":
+      Content = lazy(() => importMDX("./md/performance.md"));
+      break;
+    case "ssr":
+      Content = lazy(() => importMDX("./md/ssr.md"));
+      break;
+    case "static-site":
+      Content = lazy(() => importMDX("./md/static-site.md"));
+      break;
+    case "test-framework":
+      Content = lazy(() => importMDX("./md/test-framework.md"));
+      break;
+    case "webivew":
+      Content = lazy(() => importMDX("./md/webview.md"));
+      break;
+    case "web-assembly":
+      Content = lazy(() => importMDX("./md/web-assembly.md"));
+      break;
+    case "build-tools":
+      Content = lazy(() => importMDX("./md/build-tools.md"));
+      break;
     case "temp-md":
       Content = lazy(() => importMDX("./md/temp-md.md"));
       break;

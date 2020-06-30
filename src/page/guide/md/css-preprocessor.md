@@ -1,6 +1,6 @@
-# CSS
+# CSS预处理
 
-## CSS 预处理
+## CSS预处理器
 
 - Sass
 - Less

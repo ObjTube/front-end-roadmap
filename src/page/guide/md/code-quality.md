@@ -8,7 +8,7 @@
 - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/#why)
 
 ### Flow
-> 不太推荐是使用
+> 不太推荐使用
 
 ## linter&formatter
 
@@ -20,4 +20,4 @@
 - [javascript](https://github.com/airbnb/javascript)
 - [css](https://github.com/airbnb/css)
 - [react](https://github.com/airbnb/javascript/tree/master/react)
-  
+- [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)

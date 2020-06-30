@@ -21,6 +21,4 @@
 - [webpack demos-阮一峰老师出品](https://github.com/ruanyf/webpack-demos)
 - [rollup 文档](https://rollupjs.org/guide/en/)
 
-### 📚 书籍
 
-待补充
