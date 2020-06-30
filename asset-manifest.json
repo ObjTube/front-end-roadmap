@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/front-end-roadmap/static/css/main.8fec0975.chunk.css",
+    "main.css": "/front-end-roadmap/static/css/main.6c07c451.chunk.css",
     "main.js": "/front-end-roadmap/static/js/main.9d741cae.chunk.js",
     "main.js.map": "/front-end-roadmap/static/js/main.9d741cae.chunk.js.map",
     "runtime-main.js": "/front-end-roadmap/static/js/runtime-main.1a5d21d3.js",
@@ -59,10 +59,10 @@
     "static/js/27.56b1460a.chunk.js": "/front-end-roadmap/static/js/27.56b1460a.chunk.js",
     "static/js/27.56b1460a.chunk.js.map": "/front-end-roadmap/static/js/27.56b1460a.chunk.js.map",
     "index.html": "/front-end-roadmap/index.html",
-    "precache-manifest.9be8fae5c98bd37f80530bf952beade0.js": "/front-end-roadmap/precache-manifest.9be8fae5c98bd37f80530bf952beade0.js",
+    "precache-manifest.789688dbb508e5efc1086a88f2ed31dc.js": "/front-end-roadmap/precache-manifest.789688dbb508e5efc1086a88f2ed31dc.js",
     "service-worker.js": "/front-end-roadmap/service-worker.js",
     "static/css/2.5137fd11.chunk.css.map": "/front-end-roadmap/static/css/2.5137fd11.chunk.css.map",
-    "static/css/main.8fec0975.chunk.css.map": "/front-end-roadmap/static/css/main.8fec0975.chunk.css.map",
+    "static/css/main.6c07c451.chunk.css.map": "/front-end-roadmap/static/css/main.6c07c451.chunk.css.map",
     "static/js/2.45cb0689.chunk.js.LICENSE.txt": "/front-end-roadmap/static/js/2.45cb0689.chunk.js.LICENSE.txt",
     "static/media/logo.jpeg": "/front-end-roadmap/static/media/logo.588f5cbf.jpeg"
   },
@@ -70,7 +70,7 @@
     "static/js/runtime-main.1a5d21d3.js",
     "static/css/2.5137fd11.chunk.css",
     "static/js/2.45cb0689.chunk.js",
-    "static/css/main.8fec0975.chunk.css",
+    "static/css/main.6c07c451.chunk.css",
     "static/js/main.9d741cae.chunk.js"
   ]
 }
