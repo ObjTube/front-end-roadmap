@@ -26,3 +26,23 @@
   background-color: #e54748;
   color: #fff;
 }
+
+.guide-container blockquote {
+  background-color: rgba(255, 229, 100, 0.3);
+  border-left-color: #ffe564;
+  border-left-width: 9px;
+  border-left-style: solid;
+  padding: 20px 45px 20px 26px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: -30px;
+}
+.guide-container a {
+  text-decoration: none;
+  color: #fa744f;
+  font-weight: 600;
+}
+.guide-container ul li {
+  margin-bottom: 6px;
+}
