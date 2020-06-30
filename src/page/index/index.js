@@ -66,7 +66,7 @@ function Index() {
           className="process-select"
         />
         <div className="download" onClick={onDownloadImg}>
-          保存路线图
+          下载路线图
         </div>
       </div>
 
