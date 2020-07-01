@@ -10,7 +10,7 @@
 ### Flow
 > 不太推荐使用
 
-## linter&formatter
+## linter & formatter
 
 - [eslint](https://cn.eslint.org/)
 - [prettier](https://prettier.io/)
