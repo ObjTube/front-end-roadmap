@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/front-end-roadmap/static/css/main.b81eaf6a.chunk.css",
-    "main.js": "/front-end-roadmap/static/js/main.96d752f6.chunk.js",
-    "main.js.map": "/front-end-roadmap/static/js/main.96d752f6.chunk.js.map",
-    "runtime-main.js": "/front-end-roadmap/static/js/runtime-main.0a8d215b.js",
-    "runtime-main.js.map": "/front-end-roadmap/static/js/runtime-main.0a8d215b.js.map",
+    "main.js": "/front-end-roadmap/static/js/main.4ac4b947.chunk.js",
+    "main.js.map": "/front-end-roadmap/static/js/main.4ac4b947.chunk.js.map",
+    "runtime-main.js": "/front-end-roadmap/static/js/runtime-main.999ccc2c.js",
+    "runtime-main.js.map": "/front-end-roadmap/static/js/runtime-main.999ccc2c.js.map",
     "static/css/2.5137fd11.chunk.css": "/front-end-roadmap/static/css/2.5137fd11.chunk.css",
     "static/js/2.3fbed923.chunk.js": "/front-end-roadmap/static/js/2.3fbed923.chunk.js",
     "static/js/2.3fbed923.chunk.js.map": "/front-end-roadmap/static/js/2.3fbed923.chunk.js.map",
@@ -28,8 +28,8 @@
     "static/js/11.5069a1df.chunk.js.map": "/front-end-roadmap/static/js/11.5069a1df.chunk.js.map",
     "static/js/12.ed76ac49.chunk.js": "/front-end-roadmap/static/js/12.ed76ac49.chunk.js",
     "static/js/12.ed76ac49.chunk.js.map": "/front-end-roadmap/static/js/12.ed76ac49.chunk.js.map",
-    "static/js/13.59362c47.chunk.js": "/front-end-roadmap/static/js/13.59362c47.chunk.js",
-    "static/js/13.59362c47.chunk.js.map": "/front-end-roadmap/static/js/13.59362c47.chunk.js.map",
+    "static/js/13.6d177e5b.chunk.js": "/front-end-roadmap/static/js/13.6d177e5b.chunk.js",
+    "static/js/13.6d177e5b.chunk.js.map": "/front-end-roadmap/static/js/13.6d177e5b.chunk.js.map",
     "static/js/14.bebf1e41.chunk.js": "/front-end-roadmap/static/js/14.bebf1e41.chunk.js",
     "static/js/14.bebf1e41.chunk.js.map": "/front-end-roadmap/static/js/14.bebf1e41.chunk.js.map",
     "static/js/15.74aabb08.chunk.js": "/front-end-roadmap/static/js/15.74aabb08.chunk.js",
@@ -59,7 +59,7 @@
     "static/js/27.a692b530.chunk.js": "/front-end-roadmap/static/js/27.a692b530.chunk.js",
     "static/js/27.a692b530.chunk.js.map": "/front-end-roadmap/static/js/27.a692b530.chunk.js.map",
     "index.html": "/front-end-roadmap/index.html",
-    "precache-manifest.f54ef36528e61cc99728bfc5ca780d36.js": "/front-end-roadmap/precache-manifest.f54ef36528e61cc99728bfc5ca780d36.js",
+    "precache-manifest.28f1b4b25246e339e12a434a19a4741a.js": "/front-end-roadmap/precache-manifest.28f1b4b25246e339e12a434a19a4741a.js",
     "service-worker.js": "/front-end-roadmap/service-worker.js",
     "static/css/2.5137fd11.chunk.css.map": "/front-end-roadmap/static/css/2.5137fd11.chunk.css.map",
     "static/css/main.b81eaf6a.chunk.css.map": "/front-end-roadmap/static/css/main.b81eaf6a.chunk.css.map",
@@ -67,10 +67,10 @@
     "static/media/logo.jpeg": "/front-end-roadmap/static/media/logo.588f5cbf.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a8d215b.js",
+    "static/js/runtime-main.999ccc2c.js",
     "static/css/2.5137fd11.chunk.css",
     "static/js/2.3fbed923.chunk.js",
     "static/css/main.b81eaf6a.chunk.css",
-    "static/js/main.96d752f6.chunk.js"
+    "static/js/main.4ac4b947.chunk.js"
   ]
 }
