@@ -19,6 +19,6 @@
 
 - [webpack 中文官方文档](https://www.webpackjs.com/concepts/)
 - [webpack demos-阮一峰老师出品](https://github.com/ruanyf/webpack-demos)
-- [rollup 文档](https://rollupjs.org/guide/en/)
+- [rollupg官方文档](https://rollupjs.org/guide/en/)
 
 
