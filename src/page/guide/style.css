@@ -1,6 +1,6 @@
 .guide-container {
   margin: 0 10%;
-  padding: 30px 10%;
+  padding: 30px 10% 100px;
   border-top: 2px solid #eee;
   position: relative;
 }
