@@ -3,6 +3,7 @@ import { importMDX } from "mdx.macro";
 import { useHistory, useParams } from "react-router-dom";
 import "./style.css";
 export default function Guide() {
+  let { query } = useParams();
   const history = useHistory();
   return (
     <div className="guide-container">
@@ -10,7 +11,19 @@ export default function Guide() {
         <span>{"<- 返回"}</span>
       </div>
       <Suspense fallback={<Loading />}>
-        <Markdown />
+        <>
+          <Markdown />
+          <div className="go-github-edit">
+            <a
+              href={`https://github.com/ObjTube/front-end-roadmap/edit/master/src/page/guide/md/${query}.md`}
+            >
+              想要补充，点击这里
+              <span role="img" aria-label="cool">
+                📝
+              </span>
+            </a>
+          </div>
+        </>
       </Suspense>
     </div>
   );

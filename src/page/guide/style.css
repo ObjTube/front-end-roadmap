@@ -46,3 +46,16 @@
 .guide-container ul li {
   margin-bottom: 6px;
 }
+
+.go-github-edit {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.go-github-edit a {
+  border-bottom: 1px solid #fa744f;
+  padding-bottom: 4px;
+}
+.go-github-edit a span {
+  margin-left: 4px;
+}
