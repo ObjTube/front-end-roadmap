@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/front-end-roadmap/static/css/main.d63584c0.chunk.css",
-    "main.js": "/front-end-roadmap/static/js/main.4677e40b.chunk.js",
-    "main.js.map": "/front-end-roadmap/static/js/main.4677e40b.chunk.js.map",
+    "main.js": "/front-end-roadmap/static/js/main.21bde640.chunk.js",
+    "main.js.map": "/front-end-roadmap/static/js/main.21bde640.chunk.js.map",
     "runtime-main.js": "/front-end-roadmap/static/js/runtime-main.631e01ab.js",
     "runtime-main.js.map": "/front-end-roadmap/static/js/runtime-main.631e01ab.js.map",
     "static/css/2.5137fd11.chunk.css": "/front-end-roadmap/static/css/2.5137fd11.chunk.css",
-    "static/js/2.28e52202.chunk.js": "/front-end-roadmap/static/js/2.28e52202.chunk.js",
-    "static/js/2.28e52202.chunk.js.map": "/front-end-roadmap/static/js/2.28e52202.chunk.js.map",
+    "static/js/2.d133257b.chunk.js": "/front-end-roadmap/static/js/2.d133257b.chunk.js",
+    "static/js/2.d133257b.chunk.js.map": "/front-end-roadmap/static/js/2.d133257b.chunk.js.map",
     "static/js/3.8fb9b450.chunk.js": "/front-end-roadmap/static/js/3.8fb9b450.chunk.js",
     "static/js/3.8fb9b450.chunk.js.map": "/front-end-roadmap/static/js/3.8fb9b450.chunk.js.map",
     "static/js/4.d931cb66.chunk.js": "/front-end-roadmap/static/js/4.d931cb66.chunk.js",
@@ -59,18 +59,18 @@
     "static/js/27.a7b99fe1.chunk.js": "/front-end-roadmap/static/js/27.a7b99fe1.chunk.js",
     "static/js/27.a7b99fe1.chunk.js.map": "/front-end-roadmap/static/js/27.a7b99fe1.chunk.js.map",
     "index.html": "/front-end-roadmap/index.html",
-    "precache-manifest.5245190369838c78c0a6e170e083bcea.js": "/front-end-roadmap/precache-manifest.5245190369838c78c0a6e170e083bcea.js",
+    "precache-manifest.70627787be930fc9708307f0148f717f.js": "/front-end-roadmap/precache-manifest.70627787be930fc9708307f0148f717f.js",
     "service-worker.js": "/front-end-roadmap/service-worker.js",
     "static/css/2.5137fd11.chunk.css.map": "/front-end-roadmap/static/css/2.5137fd11.chunk.css.map",
     "static/css/main.d63584c0.chunk.css.map": "/front-end-roadmap/static/css/main.d63584c0.chunk.css.map",
-    "static/js/2.28e52202.chunk.js.LICENSE.txt": "/front-end-roadmap/static/js/2.28e52202.chunk.js.LICENSE.txt",
+    "static/js/2.d133257b.chunk.js.LICENSE.txt": "/front-end-roadmap/static/js/2.d133257b.chunk.js.LICENSE.txt",
     "static/media/logo.jpeg": "/front-end-roadmap/static/media/logo.588f5cbf.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.631e01ab.js",
     "static/css/2.5137fd11.chunk.css",
-    "static/js/2.28e52202.chunk.js",
+    "static/js/2.d133257b.chunk.js",
     "static/css/main.d63584c0.chunk.css",
-    "static/js/main.4677e40b.chunk.js"
+    "static/js/main.21bde640.chunk.js"
   ]
 }
