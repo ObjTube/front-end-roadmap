@@ -27,6 +27,7 @@ export default function Guide() {
           .map((item) => ({
             name: item.author.login,
             avatar_url: item.author.avatar_url,
+            github: item.author.html_url,
           }))
           .reverse();
         setContributors(contributors);
@@ -56,10 +57,10 @@ export default function Guide() {
             <div className="github-contributors-title">贡献人员</div>
             <div className="github-contributors-info">
               {contributors.map((ct) => (
-                <>
+                <a href={ct.github} target="_blank">
                   <img src={ct.avatar_url} alt={ct.name} />
                   <span>{ct.name}</span>
-                </>
+                </a>
               ))}
             </div>
           </div>

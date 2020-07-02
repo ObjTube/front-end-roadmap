@@ -69,7 +69,9 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-.github-contributors-info {
+.github-contributors-info a {
+  cursor: pointer;
+  color: #444;
 }
 .github-contributors-info img {
   width: 24px;
