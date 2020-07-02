@@ -59,3 +59,28 @@
 .go-github-edit a span {
   margin-left: 4px;
 }
+.github-contributors {
+  margin-top: 30px;
+  border-top: 3px solid #eee;
+  padding-top: 10px;
+  color: #444;
+}
+.github-contributors-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.github-contributors-info {
+}
+.github-contributors-info img {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 4px;
+}
+.github-contributors-info span {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 16px;
+}

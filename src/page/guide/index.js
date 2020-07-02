@@ -1,10 +1,39 @@
-import React, { lazy, Suspense, useEffect } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import { importMDX } from "mdx.macro";
 import { useHistory, useParams } from "react-router-dom";
 import "./style.css";
+import Axios from "axios";
+
+let distinct = (arr) => {
+  let map = new Map();
+  for (let item of arr) {
+    if (!map.has(item.author.id)) {
+      map.set(item.author.id, item);
+    }
+  }
+  return [...map.values()];
+};
+
 export default function Guide() {
   let { query } = useParams();
   const history = useHistory();
+  const [contributors, setContributors] = useState([]);
+
+  useEffect(() => {
+    const commitLogApi = `https://api.github.com/repos/ObjTube/front-end-roadmap/commits?path=src/page/guide/md/${query}.md`;
+    Axios.get(commitLogApi).then((res) => {
+      if (res.status && res.data) {
+        const contributors = distinct(res.data)
+          .map((item) => ({
+            name: item.author.login,
+            avatar_url: item.author.avatar_url,
+          }))
+          .reverse();
+        setContributors(contributors);
+      }
+    });
+  }, [query]);
+
   return (
     <div className="guide-container">
       <div className="go-home" onClick={history.goBack}>
@@ -22,6 +51,17 @@ export default function Guide() {
                 📝
               </span>
             </a>
+          </div>
+          <div className="github-contributors">
+            <div className="github-contributors-title">贡献人员</div>
+            <div className="github-contributors-info">
+              {contributors.map((ct) => (
+                <>
+                  <img src={ct.avatar_url} alt={ct.name} />
+                  <span>{ct.name}</span>
+                </>
+              ))}
+            </div>
           </div>
         </>
       </Suspense>
@@ -112,7 +152,7 @@ function Markdown() {
     default:
       break;
   }
-  useEffect(() => {}, []);
+
   return <Content />;
 }
 
