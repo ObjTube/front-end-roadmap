@@ -1,11 +1,8 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import GitHubButton from "react-github-btn";
 import LOGO from "../../assets/logo.jpeg";
 
 export default function Header() {
-  const history = useHistory();
-
   return (
     <div div className="header">
       <div className="top">

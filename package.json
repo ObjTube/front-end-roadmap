@@ -5,11 +5,13 @@
   "homepage": "https://objtube.github.io/front-end-roadmap",
   "dependencies": {
     "axios": "^0.19.2",
+    "customize-cra": "^1.0.0",
     "dom-to-image": "^2.6.0",
     "fabric": "^3.6.3",
     "mdx.macro": "^0.2.9",
     "rc-switch": "^3.2.0",
     "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
     "react-github-btn": "^1.2.0",
     "react-router-dom": "^5.2.0",
@@ -17,8 +19,8 @@
     "react-select": "^3.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

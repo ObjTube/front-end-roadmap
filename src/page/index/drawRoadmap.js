@@ -71,7 +71,6 @@ export function makeTag(tag, instance, isleft) {
   return group;
 }
 
-let lastMainTextSquare;
 // 生成一个带文字的卡片
 export function makeTextSquare(
   text,
@@ -115,9 +114,7 @@ export function makeTextSquare(
     lockMovementY: true, // 禁止xy轴拖动
   });
   group.hasControls = false;
-  if (isMain) {
-    lastMainTextSquare = group;
-  }
+
   return group;
 }
 // 控制主轴曲线来回扭

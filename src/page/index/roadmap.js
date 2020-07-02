@@ -1,5 +1,4 @@
 import { c, TAG } from "./drawRoadmap.js";
-const ColorMap = {};
 /**
  * 卡片x,y坐标
  * 背景颜色、宽高、标注、子树、跳转地址、字体颜色
