@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import "./style.css";
 import Axios from "axios";
@@ -19,7 +19,10 @@ export default function Guide() {
   const [contributors, setContributors] = useState([]);
 
   useEffect(() => {
-    const commitLogApi = `https://api.github.com/repos/ObjTube/front-end-roadmap/commits?path=src/page/guide/md/${query}.mdx`;
+    Array.from(document.getElementsByTagName("a")).forEach((el) => {
+      el.setAttribute("target", "_blank");
+    });
+    const commitLogApi = `https://api.github.com/repos/ObjTube/front-end-roadmap/commits?path=src/page/guide/md/${query}.md`;
     Axios.get(commitLogApi).then((res) => {
       if (res.status && res.data) {
         const contributors = distinct(res.data)
@@ -39,32 +42,30 @@ export default function Guide() {
       <div className="go-home" onClick={history.goBack}>
         <span>{"<- 返回"}</span>
       </div>
-      <Suspense fallback={<Loading />}>
-        <>
-          <Markdown />
-          <div className="go-github-edit">
-            <a
-              href={`https://github.com/ObjTube/front-end-roadmap/edit/master/src/page/guide/md/${query}.mdx`}
-            >
-              想要补充，点击这里
-              <span role="img" aria-label="cool">
-                📝
-              </span>
-            </a>
+      <>
+        <Markdown />
+        <div className="go-github-edit">
+          <a
+            href={`https://github.com/ObjTube/front-end-roadmap/edit/master/src/page/guide/md/${query}.md`}
+          >
+            想要补充，点击这里
+            <span role="img" aria-label="cool">
+              📝
+            </span>
+          </a>
+        </div>
+        <div className="github-contributors">
+          <div className="github-contributors-title">贡献人员</div>
+          <div className="github-contributors-info">
+            {contributors.map((ct) => (
+              <a href={ct.github} target="_blank" rel="noopener noreferrer">
+                <img src={ct.avatar_url} alt={ct.name} />
+                <span>{ct.name}</span>
+              </a>
+            ))}
           </div>
-          <div className="github-contributors">
-            <div className="github-contributors-title">贡献人员</div>
-            <div className="github-contributors-info">
-              {contributors.map((ct) => (
-                <a href={ct.github} target="_blank">
-                  <img src={ct.avatar_url} alt={ct.name} />
-                  <span>{ct.name}</span>
-                </a>
-              ))}
-            </div>
-          </div>
-        </>
-      </Suspense>
+        </div>
+      </>
     </div>
   );
 }
@@ -75,98 +76,82 @@ function Markdown() {
 
   switch (query) {
     case "how-does-the-internet-work":
-      Content = lazy(() => import("./md/how-does-the-internet-work.mdx"));
+      Content = require("./md/how-does-the-internet-work.md");
       break;
     case "how-does-the-browser-work":
-      Content = lazy(() => import("./md/how-does-the-browser-work.mdx"));
+      Content = require("./md/how-does-the-browser-work.md");
       break;
     case "editor":
-      Content = lazy(() => import("./md/editor.mdx"));
+      Content = require("./md/editor.md");
       break;
     case "html":
-      Content = lazy(() => import("./md/html.mdx"));
+      Content = require("./md/html.md");
       break;
     case "css":
-      Content = lazy(() => import("./md/css.mdx"));
+      Content = require("./md/css.md");
       break;
     case "javascript":
-      Content = lazy(() => import("./md/javascript.mdx"));
+      Content = require("./md/javascript.md");
       break;
     case "git":
-      Content = lazy(() => import("./md/git.mdx"));
+      Content = require("./md/git.md");
       break;
     case "node":
-      Content = lazy(() => import("./md/node.mdx"));
+      Content = require("./md/node.md");
       break;
     case "code-quality":
-      Content = lazy(() => import("./md/code-quality.mdx"));
+      Content = require("./md/code-quality.md");
       break;
     case "css-framework":
-      Content = lazy(() => import("./md/css-framework.mdx"));
+      Content = require("./md/css-framework.md");
       break;
     case "css-modern":
-      Content = lazy(() => import("./md/css-modern.mdx"));
+      Content = require("./md/css-modern.md");
       break;
     case "css-preprocessor":
-      Content = lazy(() => import("./md/css-preprocessor.mdx"));
+      Content = require("./md/css-preprocessor.md");
       break;
     case "data-view":
-      Content = lazy(() => import("./md/data-view.mdx"));
+      Content = require("./md/data-view.md");
       break;
     case "desktop-app":
-      Content = lazy(() => import("./md/desktop-app.mdx"));
+      Content = require("./md/desktop-app.md");
       break;
     case "js-framework":
-      Content = lazy(() => import("./md/js-framework.mdx"));
+      Content = require("./md/js-framework.md");
       break;
     case "mini-app":
-      Content = lazy(() => import("./md/mini-app.mdx"));
+      Content = require("./md/mini-app.md");
       break;
     case "mobile-app":
-      Content = lazy(() => import("./md/mobile-app.mdx"));
+      Content = require("./md/mobile-app.md");
       break;
     case "performance":
-      Content = lazy(() => import("./md/performance.mdx"));
+      Content = require("./md/performance.md");
       break;
     case "ssr":
-      Content = lazy(() => import("./md/ssr.mdx"));
+      Content = require("./md/ssr.md");
       break;
     case "static-site":
-      Content = lazy(() => import("./md/static-site.mdx"));
+      Content = require("./md/static-site.md");
       break;
     case "test-framework":
-      Content = lazy(() => import("./md/test-framework.mdx"));
+      Content = require("./md/test-framework.md");
       break;
     case "webivew":
-      Content = lazy(() => import("./md/webview.mdx"));
+      Content = require("./md/webview.md");
       break;
     case "web-assembly":
-      Content = lazy(() => import("./md/web-assembly.mdx"));
+      Content = require("./md/web-assembly.md");
       break;
     case "build-tools":
-      Content = lazy(() => import("./md/build-tools.mdx"));
+      Content = require("./md/build-tools.md");
       break;
     case "temp-md":
-      Content = lazy(() => import("./md/temp-md.mdx"));
+      Content = require("./md/temp-md.md");
       break;
     default:
       break;
   }
-
-  return <Content />;
-}
-
-function Loading() {
-  useEffect(() => {
-    //  毛招：
-    //  loading销毁时，再去获取lazy加载的文档里a标签
-    return () => {
-      setTimeout(() => {
-        Array.from(document.getElementsByTagName("a")).forEach((el) => {
-          el.setAttribute("target", "_blank");
-        });
-      }, 100);
-    };
-  }, []);
-  return <div>Loading...</div>;
+  return <div dangerouslySetInnerHTML={{ __html: Content }} />;
 }
