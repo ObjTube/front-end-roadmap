@@ -8,6 +8,7 @@
     "customize-cra": "^1.0.0",
     "dom-to-image": "^2.6.0",
     "fabric": "^3.6.3",
+    "html-loader": "^1.1.0",
     "markdown-loader": "^5.1.0",
     "rc-switch": "^3.2.0",
     "react": "^16.13.1",
