@@ -1,7 +1,5 @@
 import React from "react";
-import GitHubButton from "react-github-btn";
 import LOGO from "../../assets/logo.jpeg";
-
 export default function Header() {
   return (
     <div div className="header">
@@ -14,15 +12,14 @@ export default function Header() {
           }}
         />
         <span className="github-button">
-          <GitHubButton
-            href="https://github.com/ObjTube/front-end-roadmap"
-            data-color-scheme="no-preference: light; light: light; dark: dark;"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star ObjTube/front-end-roadmap on GitHub"
-          >
-            Star
-          </GitHubButton>
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=objtube&repo=front-end-roadmap&type=star&count=true&size=large"
+            frameborder="0"
+            scrolling="0"
+            width="170"
+            height="30"
+            title="GitHub"
+          ></iframe>
         </span>
       </div>
       <div className="title">
