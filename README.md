@@ -1,5 +1,9 @@
 # Front-End-Roadmap 🧶🦌
 
+🚀[访问路线](https://objtube.github.io/front-end-roadmap/#/)
+
+📺[Up主视频讲解前端学习路线](https://www.bilibili.com/video/BV1ZZ4y1H7rU/)
+
 ![路线图](./roadmap.jpeg)
 
 ## 功能
