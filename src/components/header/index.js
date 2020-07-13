@@ -2,7 +2,7 @@ import React from "react";
 import LOGO from "../../assets/logo.jpeg";
 export default function Header() {
   return (
-    <div div className="header">
+    <div className="header">
       <div className="top">
         <img
           src={LOGO}
@@ -14,7 +14,7 @@ export default function Header() {
         <span className="github-button">
           <iframe
             src="https://ghbtns.com/github-btn.html?user=objtube&repo=front-end-roadmap&type=star&count=true&size=large"
-            frameborder="0"
+            frameBorder="0"
             scrolling="0"
             width="170"
             height="30"

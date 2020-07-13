@@ -32,11 +32,11 @@ export const all = [
       [
         c("浏览器如何运行？", 160, 160),
         c("浏览器差异/兼容性", 160, 160, {}, [
-          c("Chrome", 0, 100),
-          c("Safari", 0, 100),
-          c("Firefox", 0, 100),
+          c("Chrome", 0, 120),
+          c("Safari", 0, 120),
+          c("Firefox", 0, 120),
           c("Android Browser", 0, 120),
-          c("iOS Safari", 0, 100),
+          c("iOS Safari", 0, 120),
         ]),
       ],
       [
@@ -367,10 +367,10 @@ export const all = [
         ]),
       ],
       [
-        c("跨端解决方案", 700, 100, {}, [
-          c("Taro", 890, 100, { tag: TAG.recommand }),
-          c("uni-app", 890, 100, { tag: TAG.recommand }),
-          c("Chameleon", 890, 100, { tag: TAG.optional }),
+        c("跨端解决方案", 660, 100, {}, [
+          c("Taro", 850, 100, { tag: TAG.recommand }),
+          c("uni-app", 850, 100, { tag: TAG.recommand }),
+          c("Chameleon", 850, 100, { tag: TAG.optional }),
         ]),
       ],
     ],

@@ -8,20 +8,26 @@ import drawRoadmap from "./drawRoadmap";
 import * as roadMap from "./roadmap";
 import "./style.css";
 
+const defaultHeight = 5000;
+
 const options = [
-  { value: "all", label: "完整路线" },
-  { value: "p1", label: "👶🏻 阶段1" },
-  { value: "p2", label: "👦🏻 阶段2" },
-  { value: "p3", label: "👨🏻 阶段3" },
+  { value: "all", label: "完整路线", canvasHeight: 5000 },
+  { value: "p1", label: "👶🏻 阶段1", canvasHeight: 2000 },
+  { value: "p2", label: "👦🏻 阶段2", canvasHeight: 3000 },
+  { value: "p3", label: "👨🏻 阶段3", canvasHeight: 2000 },
   //   { value: "p10000", label: "👴🏻 养生路线" },  // 这个也挺重要的，哈哈！(手动狗头
 ];
 
 function Index() {
+
   const history = useHistory();
+
   const [process, setProcess] = useState("all");
+  const [height, setHeight] = useState(defaultHeight);
   const [showTag, setShowTag] = useState(true);
+
   useEffect(() => {
-    const canvas = drawRoadmap(`roadmap-${process}`, roadMap[process], showTag);
+    const canvas = drawRoadmap(`roadmapCanvas`, roadMap[process], showTag);
     canvas.on("mouse:down", (options) => {
       if (options.target && options.target.link) {
         history.push(`/guide${options.target.link}`);
@@ -29,8 +35,13 @@ function Index() {
     });
   }, [history, process, showTag]);
 
-  const onSelectProcess = useCallback(({ value }) => {
+  const onSelectProcess = useCallback(({ value, canvasHeight }) => {
     setProcess(value);
+    // setHeight(canvasHeight); // TODO: canvas x,y 固定的，看怎么动态？
+  }, []);
+
+  const onShowTag = useCallback((value) => {
+    setShowTag(value);
   }, []);
 
   const onDownloadImg = useCallback(() => {
@@ -43,9 +54,6 @@ function Index() {
     });
   }, []);
 
-  const onShowTag = useCallback((value) => {
-    setShowTag(value);
-  }, []);
   return (
     <div className="roadmap-container">
       <div className="process-select-container">
@@ -86,44 +94,9 @@ function Index() {
             </div>
           </div>
         )}
-        {process === "all" && showTag && (
+        {(
           <div>
-            <canvas id="roadmap-all" height="5000px" width="1000px"></canvas>
-          </div>
-        )}
-        {process === "all" && !showTag && (
-          <div>
-            <canvas id="roadmap-all" height="5000px" width="1000px"></canvas>
-          </div>
-        )}
-        {process === "p1" && showTag && (
-          <div>
-            <canvas id="roadmap-p1" height="5000px" width="1000px"></canvas>
-          </div>
-        )}
-        {process === "p1" && !showTag && (
-          <div>
-            <canvas id="roadmap-p1" height="5000px" width="1000px"></canvas>
-          </div>
-        )}
-        {process === "p2" && !showTag && (
-          <div>
-            <canvas id="roadmap-p2" height="5000px" width="1000px"></canvas>
-          </div>
-        )}
-        {process === "p2" && showTag && (
-          <div>
-            <canvas id="roadmap-p2" height="5000px" width="1000px"></canvas>
-          </div>
-        )}
-        {process === "p3" && !showTag && (
-          <div>
-            <canvas id="roadmap-p3" height="5000px" width="1000px"></canvas>
-          </div>
-        )}
-        {process === "p3" && showTag && (
-          <div>
-            <canvas id="roadmap-p3" height="5000px" width="1000px"></canvas>
+            <canvas id={`roadmapCanvas`} height={`${height}px`} width="1000px"></canvas>
           </div>
         )}
       </div>
