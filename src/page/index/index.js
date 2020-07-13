@@ -8,8 +8,6 @@ import drawRoadmap from "./drawRoadmap";
 import * as roadMap from "./roadmap";
 import "./style.css";
 
-const defaultHeight = 5000;
-
 const options = [
   { value: "all", label: "完整路线", canvasHeight: 5000 },
   { value: "p1", label: "👶🏻 阶段1", canvasHeight: 2000 },
@@ -22,12 +20,12 @@ function Index() {
 
   const history = useHistory();
 
-  const [process, setProcess] = useState("all");
-  const [height, setHeight] = useState(defaultHeight);
+  const [process, setProcess] = useState(options[0]);
+  const [height, setHeight] = useState(options[0].canvasHeight);
   const [showTag, setShowTag] = useState(true);
 
   useEffect(() => {
-    const canvas = drawRoadmap(`roadmapCanvas`, roadMap[process], showTag);
+    const canvas = drawRoadmap(`roadmapCanvas`, roadMap[process.value], showTag);
     canvas.on("mouse:down", (options) => {
       if (options.target && options.target.link) {
         history.push(`/guide${options.target.link}`);
@@ -35,8 +33,8 @@ function Index() {
     });
   }, [history, process, showTag]);
 
-  const onSelectProcess = useCallback(({ value, canvasHeight }) => {
-    setProcess(value);
+  const onSelectProcess = useCallback(item => {
+    setProcess(item);
     // setHeight(canvasHeight); // TODO: canvas x,y 固定的，看怎么动态？
   }, []);
 
@@ -46,13 +44,14 @@ function Index() {
 
   const onDownloadImg = useCallback(() => {
     const $el = document.querySelector(".roadmap");
+    const downloadName = process.label.replace(/\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g, "").trim();
     domtoimage.toJpeg($el).then(function (dataUrl) {
       const link = document.createElement("a");
-      link.download = "roadmap.jpeg";
+      link.download = `roadmap-${downloadName}.jpeg`;
       link.href = dataUrl;
       link.click();
     });
-  }, []);
+  }, [process]);
 
   return (
     <div className="roadmap-container">
