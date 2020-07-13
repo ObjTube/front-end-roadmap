@@ -93,11 +93,9 @@ function Index() {
             </div>
           </div>
         )}
-        {(
-          <div>
-            <canvas id={`roadmapCanvas`} height={`${height}px`} width="1000px"></canvas>
-          </div>
-        )}
+        <div>
+          <canvas id={`roadmapCanvas`} height={`${height}px`} width="1000px" />
+        </div>
       </div>
     </div>
   );

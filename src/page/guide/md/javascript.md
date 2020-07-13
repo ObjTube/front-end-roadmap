@@ -4,14 +4,15 @@
 
 - ECMAScript 基本语法
 - DOM编程
-- BOM 的使用
+- BOM的使用
 - 作用域、闭包、原型链
-- 事件
-- 错误处理
+- 事件代理/委托
+- 错误处理/异常处理
 - 事件队列 (setTimeout/setInterval/Promise)
 - JSON
 - Ajax/Fetch
 - ES6+
+- 正则表达式
 
 ## 📄 文章&教程
 
