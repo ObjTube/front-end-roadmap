@@ -28,7 +28,7 @@ function Index() {
     const canvas = drawRoadmap(`roadmapCanvas`, roadMap[process.value], showTag);
     canvas.on("mouse:down", (options) => {
       if (options.target && options.target.link) {
-        // 是否有跳转到markdown
+        // 是否有跳转到markdown，从markdown返回的时候需要绘制一次
         window.__GO_TO_MARKDOWN__ = true
         history.push(`/guide${options.target.link}`);
       }
