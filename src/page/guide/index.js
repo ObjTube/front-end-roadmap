@@ -18,6 +18,11 @@ export default function Guide() {
   let { query } = useParams();
   const history = useHistory();
   const [contributors, setContributors] = useState([]);
+  
+  // 简单处理: router => detail page set scrollTop
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     Array.from(document.getElementsByTagName("a")).forEach((el) => {
