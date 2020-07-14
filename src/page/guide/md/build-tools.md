@@ -20,5 +20,6 @@
 - [webpack 中文官方文档](https://www.webpackjs.com/concepts/)
 - [webpack demos-阮一峰老师出品](https://github.com/ruanyf/webpack-demos)
 - [rollupg官方文档](https://rollupjs.org/guide/en/)
-
-
+- [Snowpack官方文档](https://www.snowpack.dev/)
+- [精读《snowpack》](https://zhuanlan.zhihu.com/p/144993158)
+- [vitejs/vite](Native-ESM powered web dev build tool. It's fast)

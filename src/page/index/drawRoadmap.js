@@ -170,21 +170,13 @@ export function makeSubLine(c1, c2) {
   return line;
 }
 
-
-let canvas = null;
 export default function drawRoadmap(id, roadmap, isShowTag) {
-
-  if(canvas){
-    canvas.clear();
-  }else{
-    canvas = new fabric.Canvas(id, {
-      containerClass: "roadmap-canvas",
-      selection: false,
-      interactive: false,
-      hoverCursor: "pointer",
-    });
-  }
-
+  const canvas = new fabric.Canvas(id, {
+    containerClass: "roadmap-canvas",
+    selection: false,
+    interactive: false,
+    hoverCursor: "pointer",
+  });
   const arr = [];
   const lines = [];
   // 上一个绘制的主轴的卡片
