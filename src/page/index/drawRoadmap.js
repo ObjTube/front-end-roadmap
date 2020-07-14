@@ -169,14 +169,24 @@ export function makeSubLine(c1, c2) {
   line.globalCompositeOperation = "destination-over";
   return line;
 }
-
+let canvas
 export default function drawRoadmap(id, roadmap, isShowTag) {
-  const canvas = new fabric.Canvas(id, {
+  const options = {
     containerClass: "roadmap-canvas",
     selection: false,
     interactive: false,
     hoverCursor: "pointer",
-  });
+  }
+  if (canvas) {
+    canvas.clear();
+    if (window.__GO_TO_MARKDOWN__) {
+      canvas = new fabric.Canvas(id, options);
+      window.__GO_TO_MARKDOWN__ = false
+    }
+  } else {
+    canvas = new fabric.Canvas(id, options);
+  }
+
   const arr = [];
   const lines = [];
   // 上一个绘制的主轴的卡片
@@ -206,8 +216,8 @@ export default function drawRoadmap(id, roadmap, isShowTag) {
         let childY =
           child.y ||
           parentInstance.top -
-            (Math.floor(length / 2) - index) *
-              (CARD_CONFIG.height + CARD_CONFIG.subCardMargin);
+          (Math.floor(length / 2) - index) *
+          (CARD_CONFIG.height + CARD_CONFIG.subCardMargin);
         childY += isEven ? CARD_CONFIG.height / 2 : 0;
         const c = makeTextSquare(child.text, { ...child, y: childY, depth });
         // 如果没有配置跳转地址，则使用父卡片的地址

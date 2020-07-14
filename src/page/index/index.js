@@ -21,13 +21,15 @@ function Index() {
   const history = useHistory();
 
   const [process, setProcess] = useState(options[0]);
-  const [height, setHeight] = useState(options[0].canvasHeight);
+  // const [height, setHeight] = useState(options[0].canvasHeight);
   const [showTag, setShowTag] = useState(true);
 
   useEffect(() => {
     const canvas = drawRoadmap(`roadmapCanvas`, roadMap[process.value], showTag);
     canvas.on("mouse:down", (options) => {
       if (options.target && options.target.link) {
+        // 是否有跳转到markdown
+        window.__GO_TO_MARKDOWN__ = true
         history.push(`/guide${options.target.link}`);
       }
     });
@@ -35,7 +37,8 @@ function Index() {
 
   const onSelectProcess = useCallback(item => {
     setProcess(item);
-    // setHeight(canvasHeight); // TODO: canvas x,y 固定的，看怎么动态？
+    // TODO: 需要优化下每个卡片的y轴坐标，不应该是一个具体的值，应该改为距离上一个卡片的高度
+    // setHeight(canvasHeight); // TODO: canvas x,y 固定的，看怎么动态？  
   }, []);
 
   const onShowTag = useCallback((value) => {
@@ -94,7 +97,7 @@ function Index() {
           </div>
         )}
         <div>
-          <canvas id={`roadmapCanvas`} height={`${height}px`} width="1000px" />
+          <canvas id={`roadmapCanvas`} height="5000px" width="1000px" />
         </div>
       </div>
     </div>
