@@ -84,9 +84,9 @@ function Index() {
           <div className="desc-container">
             <div className="explain-square">
               <div className="explain-content">
-                <div>1. ⭐️ - 推荐使用</div>
-                <div>2. ✅ - 备选方案</div>
-                <div>3. ❎ - 不推荐学习（技术已过时或其他原因）</div>
+                <div>1. <span role="img" aria-label="recommend">⭐️</span> - 推荐使用</div>
+                <div>2. <span role="img" aria-label="prepare">✅</span> - 备选方案</div>
+                <div>3. <span role="img" aria-label="no recommend">❎</span> - 不推荐学习（技术已过时或其他原因）</div>
                 <div>
                   4.
                   <span className="grey-card">xxxx</span> - 需要时再学
