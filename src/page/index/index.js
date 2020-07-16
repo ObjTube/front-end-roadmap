@@ -26,20 +26,19 @@ function Index() {
 
   useEffect(() => {
     const canvas = drawRoadmap(`roadmapCanvas`, roadMap[process.value], showTag);
-    canvas.on("mouse:down", (options) => {
+    canvas.setHeight(process.canvasHeight);
+    const canvasMouseDownHandler = (options) => {
       if (options.target && options.target.link) {
         // 是否有跳转到markdown，从markdown返回的时候需要绘制一次
         window.__GO_TO_MARKDOWN__ = true
         history.push(`/guide${options.target.link}`);
       }
-    });
+    }
+    canvas.on("mouse:down", canvasMouseDownHandler);
+    return () => {
+      canvas.off("mouse:down", canvasMouseDownHandler);
+    };
   }, [history, process, showTag]);
-
-  const onSelectProcess = useCallback(item => {
-    setProcess(item);
-    // TODO: 需要优化下每个卡片的y轴坐标，不应该是一个具体的值，应该改为距离上一个卡片的高度
-    // setHeight(canvasHeight); // TODO: canvas x,y 固定的，看怎么动态？  
-  }, []);
 
   const onShowTag = useCallback((value) => {
     setShowTag(value);
@@ -71,7 +70,7 @@ function Index() {
         <Select
           options={options}
           defaultValue={options[0]}
-          onChange={onSelectProcess}
+          onChange={setProcess}
           placeholder="请选择"
           className="process-select"
         />
