@@ -175,6 +175,7 @@ export default function drawRoadmap(id, roadmap, isShowTag) {
     containerClass: "roadmap-canvas",
     selection: false,
     interactive: false,
+    enableRetinaScaling: false,
     hoverCursor: "pointer",
   }
   if (canvas) {

@@ -9,13 +9,13 @@ import Header from './components/header'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <Header />
     <Router basename="/front-end-roadmap">
       <Route exact path="/" component={Index} />
       <Route path="/guide/:query" component={Guide} />
     </Router>
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );
 
