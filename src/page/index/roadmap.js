@@ -184,6 +184,7 @@ export const all = [
       [
         c("Sass", 100, 100, { tag: TAG.recommand }),
         c("PostCss", 100, 100, { tag: TAG.recommand }),
+        c("Stylus", 100, 100, { tag: TAG.optional }),
         c("Less", 100, 100, { tag: TAG.notRecommand }),
       ],
     ],
