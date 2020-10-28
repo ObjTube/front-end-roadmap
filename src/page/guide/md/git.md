@@ -2,6 +2,7 @@
 
 ## Git 使用教程
 
+- [Pro Git](https://git-scm.com/book/zh/)
 - [Git 教程-廖雪峰出品](https://www.liaoxuefeng.com/wiki/896043488029600)
 - [学习 git 分支-可视化学习，超赞 👍](https://learngitbranching.js.org/?demo=&locale=zh_CN)
 - [图解 Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
