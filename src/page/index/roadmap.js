@@ -330,7 +330,7 @@ export const all = [
     link: "/ssr",
     children: [
       [],
-      [c("Next.js(React)", 700, 120), c("Nuxt.js(Vue)", 700, 120)],
+      [c("Next.js (React)", 700, 120), c("Nuxt.js (Vue)", 700, 120)],
     ],
   },
   {
