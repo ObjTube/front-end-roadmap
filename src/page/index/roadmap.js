@@ -330,7 +330,7 @@ export const all = [
     link: "/ssr",
     children: [
       [],
-      [c("Next.js(React)", 700, 120), c("Nuxt.js(Vue)", 700, 120)],
+      [c("Next.js (React)", 700, 120), c("Nuxt.js (Vue)", 700, 120)],
     ],
   },
   {
@@ -414,12 +414,14 @@ export const all = [
     x: 300,
     y: 4500,
     process: 1,
+    link:"/learn-from-github"
   },
   {
     text: "翻滚吧！后浪！",
     x: 400,
     y: 4900,
     process: 1,
+    link:"/afterwave"
   },
 ];
 function getRoadmapByProcess(process) {
