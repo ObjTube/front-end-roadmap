@@ -1,10 +1,10 @@
 # Front End Roadmap 🧶🦌
+一个帮助新手、初级、中级前端开发者不断精进学习的网站，前端学习路上，不再迷茫~
 
-🚀[访问路线](https://objtube.github.io/front-end-roadmap/#/)
+🚀 [访问路线](https://objtube.github.io/front-end-roadmap/#/)
 
-📺[Up主视频讲解前端学习路线](https://www.bilibili.com/video/BV1ZZ4y1H7rU/)
+📺 [Up主视频讲解前端学习路线](https://www.bilibili.com/video/BV1ZZ4y1H7rU/)
 
-![路线图](./roadmap.jpeg)
 
 ## 功能
 
@@ -12,3 +12,17 @@
 2. 提供路线图下载的功能  
 3. 路线根据学习阶段进行了分级，可以查看每个阶段应该掌握的技术点  
 4. 可以关闭标签的标注（标注来着个人的看法，如不喜欢可以关掉） 
+
+## 贡献代码
+方式一：
+clone本项目，然后提PR
+
+方式二：
+你可以在每个页面项目点击“想要补充，点击这里”按钮，即可在线编辑。
+
+欢迎大家贡献学习资源~~
+## 路线图展示
+![路线图](./roadmap.jpeg)
+
+
+
