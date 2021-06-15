@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://objtube.github.io/front-end-roadmap",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "customize-cra": "^1.0.0",
     "dom-to-image": "^2.6.0",
     "fabric": "^3.6.3",
