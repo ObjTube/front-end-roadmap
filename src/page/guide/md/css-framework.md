@@ -15,6 +15,6 @@
 - [Amaze UI](https://github.com/amazeui/amazeui)
 
 ## UI后台管理系统
-- [Layui](https://www.layui.com/admin/)
+- [Layui](https://www.layui.com/layuiadmin/)
 - [Ant Design Pro](https://pro.ant.design/index-cn)
 - [Vue Element Admin](https://panjiachen.github.io/vue-element-admin-site/zh/)
