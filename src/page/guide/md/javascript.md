@@ -3,14 +3,14 @@
 ## 💥 重点掌握
 
 - ECMAScript 基本语法
-- DOM编程
-- BOM的使用
+- DOM 编程
+- BOM 的使用
 - 作用域、闭包、原型链
-- 事件代理/委托
-- 错误处理/异常处理
+- 事件代理 / 委托
+- 错误处理 / 异常处理
 - 事件队列 (setTimeout/setInterval/Promise)
 - JSON
-- Ajax/Fetch
+- Ajax / Fetch
 - ES6+
 - 正则表达式
 
@@ -31,7 +31,7 @@
 - 《JavaScript 高级程序设计》
 - 《JavaScript 语言精粹》
 - 《你不知道的 JavaScript》
-- 《JavaScript设计模式》
-- 《JavaScript权威指南》
+- 《JavaScript 设计模式》
+- 《JavaScript 权威指南》
 - 《Secrets of the JavaScript Ninja》
 - 《How JavaScript Works》

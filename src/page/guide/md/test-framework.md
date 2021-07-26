@@ -5,11 +5,11 @@
 - [理解前端开发中的unit test 和e2e test](https://juejin.im/entry/589d6f072f301e0069bda275)
   
   
-## JS测试框架
+## JS 测试框架
 - [Jest](https://jestjs.io/)
 - [Mocha](https://mochajs.org/)
 - [Jasmine](https://jasmine.github.io/)
 
-## E2E测试
+## E2E 测试
 - [Puppeteer](https://github.com/puppeteer/puppeteer)
 - [Cypress](https://www.cypress.io/)

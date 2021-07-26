@@ -4,23 +4,23 @@
 
 🚀 [访问路线](https://objtube.github.io/front-end-roadmap/#/)
 
-📺 [Up主视频讲解前端学习路线](https://www.bilibili.com/video/BV1ZZ4y1H7rU/)
+📺 [Up 主视频讲解前端学习路线](https://www.bilibili.com/video/BV1ZZ4y1H7rU/)
 
 
 ## 功能
 
-1. 点击卡片可以进入到具体的页面，查看学习资料  
-2. 提供路线图下载的功能  
-3. 路线根据学习阶段进行了分级，可以查看每个阶段应该掌握的技术点  
-4. 可以关闭标签的标注（标注来着个人的看法，如不喜欢可以关掉） 
+1. 点击卡片可以进入到具体的页面，查看学习资料；
+2. 提供路线图下载的功能 ；
+3. 路线根据学习阶段进行了分级，可以查看每个阶段应该掌握的技术点；
+4. 可以关闭标签的标注（标注来着个人的看法，如不喜欢可以关掉）。
 
 ## 贡献指南
 
 方法一：
 
-* 点击右上角`fork`按钮，将项目`fork`到自己的Github账户里。
+* 点击右上角 `fork` 按钮，将项目 `fork` 到自己的Github账户里。
 
-* 使用`git clone`将项目克隆到本地。
+* 使用 `git clone` 将项目克隆到本地。
 
 ``` bash
 git clone https://github.com/ObjTube/front-end-roadmap
@@ -41,7 +41,7 @@ git push origin master
 
 方式二：
 
-* 在每个条目页面下方点击 `想要补充，点击这里📝` 的链接，将跳转到Github的文件编辑界面，即可在线编辑，之后再提交`Pull request`
+* 在每个条目页面下方点击 `想要补充，点击这里📝` 的链接，将跳转到 Github 的文件编辑界面，即可在线编辑，之后再提交 `Pull request` 。
 
 方法三：
 

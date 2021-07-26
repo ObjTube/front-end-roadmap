@@ -13,7 +13,7 @@
 - [Awesome React](https://github.com/enaqx/awesome-react)
 - [React 入门实例教程-阮一峰老师](http://www.ruanyifeng.com/blog/2015/03/react.html)
 - [React.js 小书](http://huziketang.mangojuice.top/books/react/)
-- [官方cli-create react app](https://create-react-app.dev/)
+- [官方 cli-create react app](https://create-react-app.dev/)
 - [Basic Theoretical Concepts](https://github.com/reactjs/react-basic)
 - [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
 - [React cheatsheet](https://devhints.io/react)
