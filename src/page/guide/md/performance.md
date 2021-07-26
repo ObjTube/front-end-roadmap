@@ -1,9 +1,9 @@
 # 性能
 
-## web性能
+## Web 性能
 - [以用户为中心的性能指标](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics?hl=zh-cn)
 - [Measure performance with the RAIL model](https://web.dev/rail/)
-- [使用DevTools分析运行时性能](https://developers.google.com/web/tools/chrome-devtools/rendering-tools?hl=zh-cn)
+- [使用 DevTools 分析运行时性能](https://developers.google.com/web/tools/chrome-devtools/rendering-tools?hl=zh-cn)
 - [Get Started With Analyzing Runtime Performance](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance)
 - [Performance Analysis Reference](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)
   
