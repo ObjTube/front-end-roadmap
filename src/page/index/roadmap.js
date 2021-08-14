@@ -162,14 +162,15 @@ export const all = [
       [],
       [
         c("自动化构建", { x: 600, y: 1200 }, 100, {}, [
-          c("npm script", 800, 100),
-          c("gulp", 800, 100, { bgColor: "#CCCCCC" }),
+          c("npm script", 740, 100),
+          c("gulp", 740, 100, { bgColor: "#CCCCCC" }),
         ]),
-        c("模块化打包", { x: 600, y: 1360 }, 100, {}, [
-          c("Webpack", 800, 100, { tag: TAG.recommand }),
-          c("Rollup", 800, 100, { tag: TAG.optional }),
-          c("Parcel", 800, 100, { tag: TAG.optional }),
-          c("Snowpack", 800, 100, { tag: TAG.optional }),
+        c("模块化打包", { x: 600, y: 1380 }, 100, {}, [
+          c("Webpack", 850, 100, { tag: TAG.recommand }),
+          c("Vite", 850, 100, { tag: TAG.recommand }),
+          c("Rollup", 850, 100, { tag: TAG.optional }),
+          c("Parcel", 850, 100, { tag: TAG.optional }),
+          c("Snowpack", 850, 100, { tag: TAG.optional }),
         ]),
       ],
     ],
@@ -414,14 +415,14 @@ export const all = [
     x: 300,
     y: 4500,
     process: 1,
-    link:"/learn-from-github"
+    link: "/learn-from-github"
   },
   {
     text: "翻滚吧！后浪！",
     x: 400,
     y: 4900,
     process: 1,
-    link:"/afterwave"
+    link: "/afterwave"
   },
 ];
 function getRoadmapByProcess(process) {
