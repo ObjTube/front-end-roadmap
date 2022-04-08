@@ -1,7 +1,8 @@
 # HTML
 
 ## 📄 文章 
-- [HTML 教程](https://www.runoob.com/html/html-tutorial.html)
+- [HTML 教程 1](https://www.runoob.com/html/html-tutorial.html)
+- [HTML 教程 2](https://developer.mozilla.org/zh-CN/docs/learn)
 - [HTML YuelinWang笔记](https://mubu.com/doc/a9YYeiV0Y0)
 
 ## 📺 视频
