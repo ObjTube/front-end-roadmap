@@ -7,7 +7,7 @@
     "axios": "^0.19.2",
     "customize-cra": "^1.0.0",
     "dom-to-image": "^2.6.0",
-    "fabric": "^3.6.3",
+    "fabric": "^5.3.0",
     "html-loader": "^1.1.0",
     "markdown-loader": "^5.1.0",
     "rc-switch": "^3.2.0",
@@ -15,7 +15,7 @@
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-select": "^3.1.0"
   },
   "scripts": {
